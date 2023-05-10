@@ -11,7 +11,7 @@ def test_challenge_1():
         ["elem7"]
     ]
     assert segment_array([], 2) == []
-
+    assert segment_array(["1", "2"], 5) == [["1", "2"]]
 
 def test_challenge_2():
     test_list = [
@@ -23,6 +23,8 @@ def test_challenge_2():
         ["elem1","elem4", "elem5", "elem6", "elem7"]
     ]
     assert find_missing_elements([["elem1", "elem1"], ["elem2"]]) == [["elem1", "elem2"]]
+    assert find_missing_elements([["elem1", "elem2"], ["elem1"]]) == [["elem2"]]
+
 
 
 def test_challenge_3():
